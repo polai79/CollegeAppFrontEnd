@@ -1,0 +1,28 @@
+@keyframes slideAcrossScreen {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(36%);
+    }
+  }
+  
+  .slide-left-right {
+    animation: slideAcrossScreen 8s linear infinite;
+  }
+  
+  /* Bounce + Fade animation for motivational text */
+  @keyframes bounceFade {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .animate-bounce-fade {
+    animation: bounceFade 3s ease-in-out infinite;
+  }
