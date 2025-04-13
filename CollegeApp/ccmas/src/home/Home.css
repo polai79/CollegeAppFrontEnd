@@ -1,0 +1,29 @@
+/* GIF Slide Animation */
+.gif-slide {
+    animation: slideLeftRight 4s linear infinite alternate;
+  }
+  
+  @keyframes slideLeftRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
+  /* Motivational Quote Bounce */
+  @keyframes bounceFade {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 0.8;
+    }
+  }
+  
+  .animate-bounce-fade {
+    animation: bounceFade 2.5s ease-in-out infinite;
+  }
